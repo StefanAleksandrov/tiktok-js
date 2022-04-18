@@ -1,0 +1,18 @@
+Hello and welcome to my first video!
+Today I want to talk about variable types in Javascript.
+
+There are 2 main categories of data types - value and reference.
+Value type examples are numbers, strings, booleans, undefined and null.
+Reference type examples are arrays and objects.
+
+The main difference between these types is how we modify and copy the data they hold:
+
+The value type variables assign the value on the right side to the variable on the left side. If we try to copy a value type variable, JS will assign the value to the new variable and now if we modify the original variable, it will not affect the copy- the copy will preserve the original value unitl we modify it aswell.
+
+The reference type variables are handled differently in JS. The value on the right side is stored in the Heap while the value types are directly saved in the Stack. So now to access this value from the Heap we need to reference it, hence the name of these variables - reference type. JS assigns the reference as the value to the variable on the and now it can point to the Heap memory address.
+
+If we try to copy a reference type variable, for instance this array, we will only copy the reference to the array in the Heap and we will get 2 variables that points to the same array.
+
+If we modify the array from the original variable, it will affect the value of the copy aswell since they both point to the same reference. This behevoir of reference type variables is very important and could lead to many bugs in our code, so we need to be very carefull and always know when we are dealing with references and when with values.
+
+This is everything for this episode, see you soon and keep on learning!
